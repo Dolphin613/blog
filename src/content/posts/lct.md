@@ -157,27 +157,27 @@ void Splay(int x) {
 
 比如这样一棵树：
 
-![图1](/images/LCT-Tree1.png)
+![图1](/images/lct/tree1.png)
 
 我们现在要将它的根 $A$ 到 $N$ 拉成一条实链。如图：
 
-![图2](/images/LCT-Tree2.png)
+![图2](/images/lct/tree2.png)
 
 它的辅助树也许是这样的：
 
-![图3](/images/LCT-AuxTree1.png)
+![图3](/images/lct/auxtree1.png)
 
 我们将每一个 Splay 圈起来。如图：
 
-![图4](/images/LCT-AuxTree2.png)
+![图4](/images/lct/auxtree2.png)
 
 那么我们按上面的步骤拉成一条实链，就像这样（由于地方不够大，最后一步 $B$ 其实为 $A$ 的右儿子）：
 
-![图5](/images/LCT-Access.gif)
+![图5](/images/lct/access.gif)
 
 最后辅助树会变成这样：
 
-![图6](/images/LCT-AuxTree3.png)
+![图6](/images/lct/auxtree3.png)
 
 中序遍历 $N$ 所在的 Splay 可以得到 $ACGHILN$，与原树相同。
 
@@ -202,11 +202,11 @@ void Access(int x) {
 
 如这棵树：
 
-![图7](/images/LCT-MakeRoot1.png)
+![图7](/images/lct/makeroot1.png)
 
 以 $D$ 为根后变成了这样，就是将 $A$ 到 $D$ 的路径反向。
 
-![图8](/images/LCT-MakeRoot2.png)
+![图8](/images/lct/makeroot2.png)
 
 因此先将 $x$ 到根的路径分离，再将其翻转即可。
 
