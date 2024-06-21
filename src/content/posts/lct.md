@@ -171,7 +171,7 @@ void Splay(int x) {
 
 ![图4](/images/lct/auxtree2.png)
 
-那么我们按上面的步骤拉成一条实链，就像这样（由于地方不够大，最后一步 $B$ 其实为 $A$ 的右儿子）：
+那么我们按上面的步骤拉成一条实链，就像这样：
 
 ![图5](/images/lct/access.gif)
 
