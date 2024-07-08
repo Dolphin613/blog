@@ -281,7 +281,7 @@ void Link(int x,int y) {
 void Cut(int x,int y) {
     MakeRoot(x);
     if(FindRoot(y)!=x||fa[y]!=x||lson(y)) return;
-    //FindRoot 里面已经 Access 过了，且把 x 伸展到了根。
+    //FindRoot 里面已经 Access 过了，且把 x 伸展到了根
     fa[y]=rson(x)=0;//x 是根，深度比 y 浅，所以是右儿子
     PushUp(x);
 }
