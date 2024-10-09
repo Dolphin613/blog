@@ -5,4 +5,4 @@
 # 友链
 
 - [adolphshi的小窝](https://adolphshi.github.io/)
-- [zMrのblog](https://minecraftdream12345.github.io/)
+- [zMrのblog](https://blog.517group.cn/)
